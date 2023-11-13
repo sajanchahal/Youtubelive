@@ -5,10 +5,10 @@
 VBR="2500k"                                    # Output video bitrate
 FPS="30"                                       # Output video FPS
 QUAL="medium"                                  # FFmpeg quality preset
-YOUTUBE_URL="rtmp://a.rtmp.youtube.com/live2"  # YouTube RTMP base URL
+YOUTUBE_URL="rtmp://rtmp-in.rooter.io:443/show"  # YouTube RTMP base URL
 
 SOURCE="20230813_201849.mp4"                   # UDP source (see SAP announcements)
-KEY="zkae-3zte-ee9s-yv6r-942w"                 # Key to retrieve from YouTube event
+KEY="557bc9a78c34c519f18688ac59b523a7"                 # Key to retrieve from YouTube event
 
 ffmpeg \
     -stream_loop -1 -i "$SOURCE" -deinterlace \
